@@ -7,11 +7,11 @@ function TodoInput() {
   const { newTodo, setNewTodo, addNewTodo } = useTodoContext();
 
   return (
-    <div className="todo-list-header">
-      <h1> todos </h1>
+    <div className="todo-header">
+      <div className="todo-title"> todos </div>
       <input
         type="text"
-        className="todo-list-input"
+        className="todo-input"
         placeholder="What Needs To Be Done?"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}

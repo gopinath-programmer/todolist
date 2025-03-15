@@ -8,12 +8,12 @@ function TodoFooter() {
   const { todos,setFilteredTodo , deleteCompletedTodos } = useTodoContext();
   const count  = _.size(_.filter(todos,{completed: false}))
   return (
-    <div>
-      <span>{count} items left </span>
-      <button onClick={() => setFilteredTodo("All")}>All</button>
-      <button onClick={() => setFilteredTodo("Active")}>Active</button>
-      <button onClick={() => setFilteredTodo("Completed")}>Completed</button>
-      <button onClick={deleteCompletedTodos}>Clear Completed</button>
+    <div className="todo-footer">
+      <span>{count} items left! </span>
+      <button className="todo-button" onClick={() => setFilteredTodo("All")}>All</button>
+      <button className="todo-button"  onClick={() => setFilteredTodo("Active")}>Active</button>
+      <button className="todo-button"  onClick={() => setFilteredTodo("Completed")}>Completed</button>
+      <button className="todo-button"  onClick={deleteCompletedTodos}>Clear Completed</button>
     </div>
   );
 }

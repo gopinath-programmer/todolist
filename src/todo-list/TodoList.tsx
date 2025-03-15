@@ -8,12 +8,14 @@ import TodoFooter from "./TodoFooter";
 
 function TodoList() {
   return (
-    <div>
+    <div  className = 'todo-main'>
+      <div className="todo-container">
       <TodoProvider>
         <TodoInput />
         <TodoItems />
         <TodoFooter />
       </TodoProvider>
+      </div>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import React, {
 } from "react";
 import { produce } from "immer";
 import _ from "lodash";
+import './todo.css';
 
 interface TodoType {
   id: number;
